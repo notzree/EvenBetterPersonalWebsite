@@ -14,7 +14,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='bg-neutral w-screen h-screen'>
+      <main className='bg-neutral w-screen h-screen overflow-x-hidden'>
         <NavBar/>
         <SideBar/>
         <Hero/>
