@@ -1,6 +1,6 @@
 export default function NavBar() {
   return (
-    <div className="navbar bg-neutral text-primary-content px-10">
+    <div className="navbar bg-neutral text-primary-content px-10  mb-16">
       <div className="flex-1">
         <a className="btn btn-ghost normal-case text-xl text-primary">
           Put logo here
