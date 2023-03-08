@@ -8,6 +8,7 @@ import { useState, useEffect } from "react";
 import Elements from "./Elements";
 import MobileElements from "./MobileElements";
 import Link from "next/link";
+import { toast } from "react-hot-toast";
 export default function Hero() {
   const [Comp, setComp] = useState();
    function createInitialData() {
@@ -49,6 +50,37 @@ export default function Hero() {
     });
   }, []);
 
+  function copyEmail (){
+    const text = "r29zhang@uwaterloo.ca";
+    navigator.clipboard.writeText(text)
+      .then(() => {
+        toast("Email copied to Clipboard",
+        {
+          icon: '✅',
+          style: {
+            borderRadius: '10px',
+            background: '#24272D',
+            color: '#fff',
+          },
+        }
+      );
+      })
+      .catch((error) => {
+        toast("Encountered an Error: Email is here: r29zhang@uwaterloo.ca",
+        {
+          icon: '❌',
+          style: {
+            borderRadius: '10px',
+            background: '#24272D',
+            color: '#fff',
+          },
+        }
+      );
+      });
+
+  }
+
+
   return (
     <div className="bg-neutral min-h-screen w-screen flex flex-col items-center px-10 md:px-0">
       <div className="flex flex-col justify-center items-start md:w-auto">
@@ -59,15 +91,18 @@ export default function Hero() {
               Software Engineer / Fullstack Developer
             </h3>
             <div className="flex flex-row justify-start md:gap-16 items-center pt-4 gap-12 ">
-              <button className="pl-2">
+              <a href="mailto:r29zhang@uwaterloo.ca">
+                <button className="pl-2" onClick={copyEmail}>
                 <AiOutlineMail className=" scale-150" />
               </button>
-              <button className="">
+              </a>
+              
+              <a className="" href="https://www.linkedin.com/in/richard-zhang-318861217/">
                 <AiOutlineLinkedin className=" scale-150" />
-              </button>
-              <button className="">
+              </a>
+              <a className="" href="https://github.com/notzree">
                 <AiOutlineGithub className=" scale-150" />
-              </button>
+              </a>
             </div>
           </div>
           <div className="avatar md:pl-10">

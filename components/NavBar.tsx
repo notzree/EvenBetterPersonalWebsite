@@ -14,13 +14,13 @@ export default function NavBar() {
       <div className="flex-none">
         <Link
           href="/"
-          className="btn btn-ghost normal-case md:text-md text-xs text-primary "
+          className="btn btn-ghost normal-case md:text-base text-xs text-primary "
         >
           Summary
         </Link>
         <Link
           href="/portfolio"
-          className="btn btn-ghost normal-case md:text-md text-xs text-primary"
+          className="btn btn-ghost normal-case md:text-base text-xs text-primary"
         >
           Portfolio
         </Link>
@@ -28,7 +28,7 @@ export default function NavBar() {
           href="/Resume.pdf"
           target="_blank"
           rel="noreferrer"
-          className="btn btn-ghost normal-case md:text-md text-xs text-primary"
+          className="btn btn-ghost normal-case md:text-base text-xs text-primary"
         >
           Resume
         </a>
