@@ -27,6 +27,8 @@ export default function Hero() {
       initialData.scrollToContent = true;
       initialData.appState = {
         viewBackgroundColor: "#E6E8EF",
+        zoom: 0.8,
+
       };
       initialData.elements = Elements
     } else {
@@ -163,7 +165,7 @@ export default function Hero() {
           </h3>
         </div>
       </div>
-      <div className="md:w-[75rem] md:h-[40rem] flex items-center justify-center mb-10 w-[20rem] h-[40rem] ">
+      <div className="md:w-[60rem] md:h-[30rem] flex items-center justify-center mb-10 w-[20rem] h-[40rem] ">
         {
           
           Comp && (
@@ -172,6 +174,7 @@ export default function Hero() {
               theme="dark"
               viewModeEnabled
               initialData={createInitialData()}
+
             />
           )
         }
