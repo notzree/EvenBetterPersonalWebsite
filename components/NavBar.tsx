@@ -2,25 +2,25 @@ import Link from "next/link";
 
 export default function NavBar() {
   return (
-    <div className="navbar bg-neutral text-primary-content px-10  mb-16">
+    <div className="navbar bg-neutral text-primary-content md:px-10  mb-16">
       <div className="flex-1">
         <Link
           href="/"
           className="btn btn-ghost normal-case text-xl text-primary"
         >
-          Put logo here
+          Logo
         </Link>
       </div>
       <div className="flex-none">
         <Link
           href="/"
-          className="btn btn-ghost normal-case text-md text-primary"
+          className="btn btn-ghost normal-case md:text-md text-xs text-primary "
         >
           Summary
         </Link>
         <Link
           href="/portfolio"
-          className="btn btn-ghost normal-case text-md text-primary"
+          className="btn btn-ghost normal-case md:text-md text-xs text-primary"
         >
           Portfolio
         </Link>
@@ -28,7 +28,7 @@ export default function NavBar() {
           href="/Resume.pdf"
           target="_blank"
           rel="noreferrer"
-          className="btn btn-ghost normal-case text-md text-primary"
+          className="btn btn-ghost normal-case md:text-md text-xs text-primary"
         >
           Resume
         </a>

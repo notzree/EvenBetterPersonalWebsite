@@ -4,22 +4,23 @@ import {
   AiOutlineMail,
 } from "react-icons/ai";
 import { useState, useEffect } from "react";
-// import { loadFromBlob } from "@excalidraw/excalidraw";
+import { loadFromBlob } from "@excalidraw/excalidraw";
 import Elements from "./Elements";
 import MobileElements from "./MobileElements";
 import Link from "next/link";
 export default function Hero() {
   const [Comp, setComp] = useState();
   async function createInitialData() {
-    // var response;
-    // if (window.innerWidth > 640) {
-      // response = await fetch("/websiteSkills.excalidraw");
-    // } else {
-      // response = await fetch("/websiteSkillsMobile.excalidraw");
-// 
-    // }
-    // const data = await response.blob();
-    // const scene = await loadFromBlob(data, null, null);
+    var response;
+    if (window.innerWidth > 640) {
+      response = await fetch("/websiteSkills.excalidraw");
+    } else {
+      response = await fetch("/websiteSkillsMobile.excalidraw");
+
+    }
+    const data = await response.blob();
+    const scene = await loadFromBlob(data, null, null);
+    console.log(scene.elements);
     let initialData: any = {};
     if (window.innerWidth > 640){
       initialData.scrollToContent = true;
@@ -70,7 +71,7 @@ export default function Hero() {
             </div>
           </div>
           <div className="avatar md:pl-10">
-            <div className=" w-20 md:w-32 rounded-full ring ring-accent ring-offset-base-100 ring-offset-2">
+            <div className=" w-20 md:w-32 rounded-full ring ring-accent ring-offset-base-100 ring-offset-2 ml-2 md:ml-0">
               <img src="https://cdn141.picsart.com/360612094067201.jpg" />
             </div>
           </div>
