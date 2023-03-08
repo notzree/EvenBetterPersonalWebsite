@@ -19,6 +19,16 @@ export default{
             type: 'string',
         },
         {
+            name: 'link',
+            title: 'Link',
+            type: 'string',
+        },
+        {
+            name: 'order',
+            title: 'Order',
+            type: 'number',
+        },
+        {
             name: 'slug',
             title: 'Slug',
             type: 'slug',
@@ -31,13 +41,12 @@ export default{
         {
             name: 'skills',
             title: 'Skills',
-            type: 'array',
-            of:[{type:'string'}]
+            type: 'string',
         },
         {
             name: 'description',
             title: 'Description',
-            type: 'string'
+            type: 'text'
         },
     ]
 }
