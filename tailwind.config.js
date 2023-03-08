@@ -8,6 +8,16 @@ module.exports = {
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  theme:{
+    extend:{
+      fontFamily:{
+      'prompt': ['Prompt','sans-serif'],
+      'mada' : ['Mada','sans-serif'],
+      'assistant' : ['Assistant','sans-serif'],
+    }
+    }
+  },
+
   daisyui: {
     themes: [
       {
