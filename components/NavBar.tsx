@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import Image from "next/image";
 export default function NavBar() {
   return (
     <div className="navbar bg-neutral text-primary-content md:px-10  mb-16">
@@ -8,7 +8,7 @@ export default function NavBar() {
           href="/"
           className="btn btn-ghost normal-case text-xl text-primary"
         >
-          Logo
+          <img src="/logo.png" className="w-12"/>
         </Link>
       </div>
       <div className="flex-none">

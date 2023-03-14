@@ -96,10 +96,13 @@ export default function Hero() {
               <a
                 className=""
                 href="https://www.linkedin.com/in/richard-zhang-318861217/"
+                rel="noreferrer"
+                target="_blank"
               >
                 <AiOutlineLinkedin className=" scale-150" />
               </a>
-              <a className="" href="https://github.com/notzree">
+              <a className="" href="https://github.com/notzree" rel="noreferrer"
+                target="_blank">
                 <AiOutlineGithub className=" scale-150" />
               </a>
             </div>
