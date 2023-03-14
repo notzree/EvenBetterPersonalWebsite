@@ -27,7 +27,7 @@ export default function Hero() {
       initialData.scrollToContent = true;
       initialData.appState = {
         viewBackgroundColor: "#E6E8EF",
-        zoom: 0.8,
+        zoom: 0.95,
       };
       initialData.elements = Elements;
     } else {
@@ -83,7 +83,7 @@ export default function Hero() {
             <h1 className="text-primary text-3xl md:text-4xl font-prompt">
               Richard Zhang
             </h1>
-            <h3 className="text-secondary pt-2">
+            <h3 className="text-indigo-500 pt-2">
               Software Engineer / Fullstack Developer
             </h3>
             <div className="flex flex-row justify-start md:gap-16 items-center pt-4 gap-12 ">
@@ -114,7 +114,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="w-full ">
-          <h3 className="font-mada font-bold text-2xl  text-primary underline decoration-gray-600 underline-offset-8 decoration-4 mb-6">
+          <h3 className="font-mada font-bold text-2xl  text-primary underline decoration-gray-900 underline-offset-8 decoration-4 mb-6">
             &nbsp;Work &nbsp;
           </h3>
 
@@ -128,7 +128,7 @@ export default function Hero() {
               href="https://www.energyintell.com/Home/"
               target="_blank"
               rel="noreferrer"
-              className="text-secondary"
+              className="text-indigo-500"
             >
               Energy Intell
             </a>
@@ -138,7 +138,7 @@ export default function Hero() {
               href="https://www.scarball.ca/"
               target="_blank"
               rel="noreferrer"
-              className="text-secondary"
+              className="text-indigo-500"
             >
               {" "}
               Scarball
@@ -148,7 +148,7 @@ export default function Hero() {
               href="https://www.scarbx.ca/"
               target="_blank"
               rel="noreferrer"
-              className="text-secondary"
+              className="text-indigo-500"
             >
               {" "}
               top-secret music project
@@ -156,18 +156,31 @@ export default function Hero() {
             . When not online, he is often found at the gym.
           </p>
           <div className="flex justify-center items-center mb-2">
-            <Link className="btn kbd " href="/portfolio">
+            {/* <Link className="btn kbd " href="/portfolio">
               <span className="font-mada">View Portfolio</span>
-            </Link>
+            </Link> */}
+          <a href="#_" className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-primary transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-neutr group  border border-gray-900">
+<span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-indigo-600 group-hover:h-full"></span>
+<span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
+<svg className="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+</span>
+<span className="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
+<svg className="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+</span>
+<span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">View Portfolio</span>
+</a>
+
+
+
           </div>
         </div>
         <div className="w-full">
-          <h3 className="font-mada font-bold text-2xl pb-2 text-primary underline decoration-gray-600 underline-offset-8 decoration-4 mb-6 ">
+          <h3 className="font-mada font-bold text-2xl pb-2 text-primary underline decoration-gray-900 underline-offset-8 decoration-4 mb-6 ">
             &nbsp;Skills &nbsp;
           </h3>
         </div>
       </div>
-      <div className="md:w-[60rem] md:h-[30rem] flex items-center justify-center mb-10 w-[20rem] h-[40rem] ">
+      <div className="md:w-[70rem] md:h-[30rem] flex items-center justify-center mb-10 w-[20rem] h-[40rem] ">
         {Comp && (
           //@ts-ignore
           <Comp
