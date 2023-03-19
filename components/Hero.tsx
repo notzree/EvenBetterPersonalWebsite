@@ -11,10 +11,10 @@ import Link from "next/link";
 import { toast } from "react-hot-toast";
 export default function Hero() {
   const [Comp, setComp] = useState();
-  function createInitialData() {
+   function createInitialData() {
     // var response;
     // if (window.innerWidth > 640) {
-    //   response = await fetch("/websiteSkills.excalidraw");
+    //   response = await fetch("/websiteSkillsMobile.excalidraw");
     // } else {
     //   response = await fetch("/websiteSkillsMobile.excalidraw");
 
