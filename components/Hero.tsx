@@ -134,6 +134,7 @@ export default function Hero() {
             &nbsp;developing a reverse ETL pipeline and their mobile dashboard app with <span className="text-green-400">React Native</span> and <span className="text-green-400">.NET Core</span>.&nbsp;
             Aside from work, he enjoys participating in in-person hackathons and exploring new technologies like <span className="text-green-400">Redis</span> and <span className="text-green-400">Qdrant</span> in his personal projects.  
             When not online, he is often found at the gym.
+          </p>
           <div className="flex justify-center items-center mb-2">
             {/* <Link className="btn kbd " href="/portfolio">
               <span className="font-mada">View Portfolio</span>
