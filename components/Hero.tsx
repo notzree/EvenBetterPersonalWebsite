@@ -119,42 +119,21 @@ export default function Hero() {
           </h3>
 
           <p className="text-primary md:w-[40rem] text-md md:text-lg mb-8">
-            &nbsp;&nbsp;&nbsp;&nbsp;Richard is a freelance and a full-stack
-            software engineer based in Toronto and is studying Systems Desgin
+            &nbsp;&nbsp;&nbsp;&nbsp;Richard is a software engineer based in Toronto and is studying Systems Desgin
             Engineering at the University of Waterloo. He has a knack for
-            developing effective digital web-based solutions for businesses of
+            developing effective digital solutions for businesses of
             all scale. He is currently working at{" "}
             <a
               href="https://www.energyintell.com/Home/"
               target="_blank"
               rel="noreferrer"
-              className="text-indigo-500"
+              className="text-indigo-400"
             >
               Energy Intell
             </a>
-            &nbsp;developing a reverse ETL pipeline, amongst other things. His
-            freelance projects have recently included
-            <a
-              href="https://www.scarball.ca/"
-              target="_blank"
-              rel="noreferrer"
-              className="text-indigo-500"
-            >
-              {" "}
-              Scarball
-            </a>
-            , and a
-            <a
-              href="https://www.scarbx.ca/"
-              target="_blank"
-              rel="noreferrer"
-              className="text-indigo-500"
-            >
-              {" "}
-              top-secret music project
-            </a>
-            . When not online, he is often found at the gym.
-          </p>
+            &nbsp;developing a reverse ETL pipeline and their mobile dashboard app with <span className="text-green-400">React Native</span> and <span className="text-green-400">.NET Core</span>.&nbsp;
+            Aside from work, he enjoys participating in in-person hackathons and exploring new technologies like <span className="text-green-400">Redis</span> and <span className="text-green-400">Qdrant</span> in his personal projects.  
+            When not online, he is often found at the gym.
           <div className="flex justify-center items-center mb-2">
             {/* <Link className="btn kbd " href="/portfolio">
               <span className="font-mada">View Portfolio</span>
