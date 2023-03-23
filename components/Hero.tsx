@@ -11,7 +11,7 @@ import Link from "next/link";
 import { toast } from "react-hot-toast";
 export default function Hero() {
   const [Comp, setComp] = useState();
-   function createInitialData() {
+  function createInitialData() {
     // var response;
     // if (window.innerWidth > 640) {
     //   response = await fetch("/websiteSkillsMobile.excalidraw");
@@ -101,15 +101,19 @@ export default function Hero() {
               >
                 <AiOutlineLinkedin className=" scale-150" />
               </a>
-              <a className="" href="https://github.com/notzree" rel="noreferrer"
-                target="_blank">
+              <a
+                className=""
+                href="https://github.com/notzree"
+                rel="noreferrer"
+                target="_blank"
+              >
                 <AiOutlineGithub className=" scale-150" />
               </a>
             </div>
           </div>
           <div className="avatar md:pl-10">
             <div className=" w-20 md:w-32 rounded-full ring ring-accent ring-offset-base-100 ring-offset-2 ml-2 md:ml-0">
-              <img src="https://cdn141.picsart.com/360612094067201.jpg" />
+              <img src="/profile.JPG" />
             </div>
           </div>
         </div>
@@ -119,10 +123,10 @@ export default function Hero() {
           </h3>
 
           <p className="text-primary md:w-[40rem] text-md md:text-lg mb-8">
-            &nbsp;&nbsp;&nbsp;&nbsp;Richard is a software engineer based in Toronto and is studying Systems Desgin
-            Engineering at the University of Waterloo. He has a knack for
-            developing effective digital solutions for businesses of
-            all scale. He is currently working at{" "}
+            &nbsp;&nbsp;&nbsp;&nbsp;Richard is a software engineer based in
+            Toronto and is studying Systems Desgin Engineering at the University
+            of Waterloo. He has a knack for developing effective digital
+            solutions for businesses of all scale. He is currently working at{" "}
             <a
               href="https://www.energyintell.com/Home/"
               target="_blank"
@@ -131,27 +135,59 @@ export default function Hero() {
             >
               Energy Intell
             </a>
-            &nbsp;developing a reverse ETL pipeline and their mobile dashboard app with <span className="text-green-400">React Native</span> and <span className="text-green-400">.NET Core</span>.&nbsp;
-            Aside from work, he enjoys participating in in-person hackathons and exploring new technologies like <span className="text-green-400">Redis</span> and <span className="text-green-400">Qdrant</span> in his personal projects.  
-            When not online, he is often found at the gym.
+            &nbsp;developing a reverse ETL pipeline and their mobile dashboard
+            app with <span className="text-green-400">React Native</span> and{" "}
+            <span className="text-green-400">.NET Core</span>.&nbsp; Aside from
+            work, he enjoys participating in in-person hackathons and exploring
+            new technologies like <span className="text-green-400">Redis</span>{" "}
+            and <span className="text-green-400">Qdrant</span> in his personal
+            projects. When not online, he is often found at the gym.
           </p>
           <div className="flex justify-center items-center mb-2">
             {/* <Link className="btn kbd " href="/portfolio">
               <span className="font-mada">View Portfolio</span>
             </Link> */}
-          <Link href="/portfolio" className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-primary transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-neutr group  border border-gray-900">
-<span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-indigo-600 group-hover:h-full"></span>
-<span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
-<svg className="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-</span>
-<span className="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
-<svg className="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-</span>
-<span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">View Portfolio</span>
-</Link>
-
-
-
+            <Link
+              href="/portfolio"
+              className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-primary transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-neutr group  border border-gray-900"
+            >
+              <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-indigo-600 group-hover:h-full"></span>
+              <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
+                <svg
+                  className="w-5 h-5 text-green-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  ></path>
+                </svg>
+              </span>
+              <span className="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
+                <svg
+                  className="w-5 h-5 text-green-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  ></path>
+                </svg>
+              </span>
+              <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">
+                View Portfolio
+              </span>
+            </Link>
           </div>
         </div>
         <div className="w-full">
