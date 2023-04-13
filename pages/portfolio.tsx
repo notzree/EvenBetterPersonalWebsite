@@ -19,10 +19,7 @@ export default function Home({projects}:any){
 export async function getServerSideProps(){
     
     const cache:string = await redis.get('projects') || "";
-    
     if(cache != ""){
-        
-        
         return{
             props:{
                 projects: JSON.parse(JSON.stringify(cache))
