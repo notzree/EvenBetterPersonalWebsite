@@ -21,7 +21,12 @@ export default function PortfolioHero({projects}:any){
 
                         </div>
                             <div className="md:w-[60rem] w-[20rem] md:mx-0 mx-14 ">
-                                <div className="flex flex-row justify-start items-center gap-2">  <h1 className="text-indigo-500 font-bold text-2xl font-mada">{item.name}</h1><a href={item.link} className = "text-indigo-500" target="_blank" rel="noreferrer"><AiOutlineGithub className="scale-125"  /></a></div>
+                                <div className="flex flex-row justify-start items-center gap-2">  <h1 className="text-indigo-500 font-bold text-2xl font-mada">{item.name}</h1>
+                                {
+                                  item.link &&   <a href={item.link} className = "text-indigo-500" target="_blank" rel="noreferrer"><AiOutlineGithub className="scale-125"  /></a>
+                                }
+
+                                </div>
                             <div className="flex flex-row gap-2">
                             <p className="text-primary md:text-sm   text-xs">
                             {item.skills}
