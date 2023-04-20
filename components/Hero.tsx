@@ -84,7 +84,7 @@ export default function Hero() {
               Richard Zhang
             </h1>
             <h3 className="text-indigo-500 pt-2">
-              Software Engineer / Fullstack Developer
+              Software Engineer 
             </h3>
             <div className="flex flex-row justify-start md:gap-16 items-center pt-4 gap-12 ">
               <a href="mailto:r29zhang@uwaterloo.ca">
