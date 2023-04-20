@@ -3,7 +3,7 @@ This is my most recent and up to date personal website.
 It is built using: 
 - Next.js 
 - Typescript
-- Sanity.io
+- Sanity.io (Where I keep my portfolio data)
 - Upstash (For serverless redis)
 - Tailwind
 - Excalidraw (For my diagrams)
