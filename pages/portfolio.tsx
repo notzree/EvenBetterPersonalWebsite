@@ -13,7 +13,7 @@ export default function Home({projects}:any){
     )
 }
 
-export async function getServerSideProps(){
+export async function getStaticProps(){
     const query = '*[_type =="Project"]| order(order asc)';
     const projects = await client.fetch(query);
     return{
