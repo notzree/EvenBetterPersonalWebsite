@@ -139,7 +139,8 @@ export default function Hero() {
             app with <span className="text-green-400">React Native</span> and{" "}
             <span className="text-green-400">.NET Core</span>.&nbsp; Aside from
             work, he enjoys participating in in-person hackathons and working on his
-            super secret side project <span className="text-indigo-400">Athena. </span>
+            super secret side project <a href = "https://github.com/aanxniee/athena"
+            className="text-indigo-400" target="_blank" rel = "noreferrer">Athena. </a>
             When not online, he is often found at the gym.
           </p>
           <div className="flex justify-center items-center mb-2">
