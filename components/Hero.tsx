@@ -122,26 +122,25 @@ export default function Hero() {
             &nbsp;Work &nbsp;
           </h3>
 
-          <p className="text-primary md:w-[40rem] text-md md:text-lg mb-8">
-            &nbsp;&nbsp;&nbsp;&nbsp;Richard is a software engineer based in
-            Toronto and is studying Systems Desgin Engineering at the University
+          <p className="text-primary md:w-[36rem] text-md md:text-lg mb-8 whitespace-normal break-words">
+            Richard is a software engineer based in
+            Toronto and is studying Systems Design Engineering at the University
             of Waterloo. He has a knack for developing effective digital
-            solutions for businesses of all scale. He is currently working at{" "}
+            solutions for businesses of all scale. He previously worked at{" "}
             <a
               href="https://www.energyintell.com/Home/"
               target="_blank"
               rel="noreferrer"
               className="text-indigo-400"
             >
-              Energy Intell
+            Energy Intell
             </a>
             &nbsp;developing a reverse ETL pipeline and their mobile dashboard
             app with <span className="text-green-400">React Native</span> and{" "}
             <span className="text-green-400">.NET Core</span>.&nbsp; Aside from
-            work, he enjoys participating in in-person hackathons and exploring
-            new technologies like <span className="text-green-400">Redis</span>{" "}
-            and <span className="text-green-400">Qdrant</span> in his personal
-            projects. When not online, he is often found at the gym.
+            work, he enjoys participating in in-person hackathons and working on his
+            super secret side project <span className="text-green-400">Athena. </span>
+            When not online, he is often found at the gym.
           </p>
           <div className="flex justify-center items-center mb-2">
             {/* <Link className="btn kbd " href="/portfolio">
