@@ -125,7 +125,8 @@ export default function Hero() {
           <p className="text-primary md:w-[36rem] text-md md:text-lg mb-8 whitespace-normal break-words">
             Richard is a software engineer based in
             Toronto and is studying Systems Design Engineering at the University
-            of Waterloo. He has a knack for developing effective digital
+            of Waterloo. He is primarily back-end focused, and most familiar with a <span className="text-green-400">node.js</span> or <span className="text-green-400">python</span> stack.   
+            He has a knack for developing effective digital
             solutions for businesses of all scale. He previously worked at{" "}
             <a
               href="https://www.energyintell.com/Home/"
@@ -136,8 +137,7 @@ export default function Hero() {
             Energy Intell
             </a>
             &nbsp;developing a reverse ETL pipeline and their mobile dashboard
-            app with <span className="text-green-400">React Native</span> and{" "}
-            <span className="text-green-400">.NET Core</span>.&nbsp; Aside from
+            app with <span className="text-green-400">.NET Core</span>.&nbsp; Aside from
             work, he enjoys participating in in-person hackathons and working on his
             super secret side project <a href = "https://github.com/aanxniee/athena"
             className="text-indigo-400" target="_blank" rel = "noreferrer">Athena. </a>
@@ -149,7 +149,7 @@ export default function Hero() {
             </Link> */}
             <Link
               href="/portfolio"
-              className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-primary transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-neutr group  border border-gray-900"
+              className=" rounded-lg relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-primary transition-all duration-150 ease-in-out  hover:pl-10 hover:pr-6 bg-neutr group  border border-gray-900"
             >
               <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-indigo-600 group-hover:h-full"></span>
               <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
@@ -184,7 +184,7 @@ export default function Hero() {
                   ></path>
                 </svg>
               </span>
-              <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">
+              <span className=" rounded-lg relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">
                 View Portfolio
               </span>
             </Link>
