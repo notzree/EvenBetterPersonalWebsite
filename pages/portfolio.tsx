@@ -26,7 +26,6 @@ export async function getStaticProps(){
             }
         }
     } else{
-        
         const query = '*[_type =="Project"]| order(order asc)';
         const projects = await client.fetch(query);
         await redis.set('projects', JSON.stringify(projects), {ex:10000});
