@@ -11,7 +11,7 @@ import Link from "next/link";
 import { toast } from "react-hot-toast";
 export default function Hero() {
   const [Comp, setComp] = useState();
-   function createInitialData() {
+  function createInitialData() {
     // var response;
     // if (window.innerWidth > 640) {
     //   response = await fetch("/websiteSkills.excalidraw");
@@ -83,9 +83,7 @@ export default function Hero() {
             <h1 className="text-primary text-3xl md:text-4xl font-prompt">
               Richard Zhang
             </h1>
-            <h3 className="text-indigo-500 pt-2">
-              Software Engineer 
-            </h3>
+            <h3 className="text-indigo-500 pt-2">Software Engineer</h3>
             <div className="flex flex-row justify-start md:gap-16 items-center pt-4 gap-12 ">
               <a href="mailto:r29zhang@uwaterloo.ca">
                 <button className="pl-2" onClick={copyEmail}>
@@ -121,32 +119,37 @@ export default function Hero() {
           <h3 className="font-mada font-bold text-2xl  text-primary underline decoration-gray-900 underline-offset-8 decoration-4 mb-6">
             &nbsp;Work &nbsp;
           </h3>
-
-          <p className="text-primary md:w-[36rem] text-md md:text-lg mb-8 whitespace-normal break-words">
-            Richard is a software engineer based in
-            Toronto and is studying Systems Design Engineering at the University
-            of Waterloo. He is primarily back-end focused, and most familiar with a <span className="text-green-400">node.js</span> or <span className="text-green-400">python</span> stack.   
-            He has a knack for developing effective digital
-            solutions for businesses of all scale. He previously worked at{" "}
+          <p className="text-primary md:w-[36rem] text-md md:text-lg mb-8  text-justify   ">
+            Richard is a software engineer based in Toronto studying Systems
+            Design Engineering at the{" "}
+            <span className="text-green-400">University of Waterloo. </span>
+            He is working as a Fullstack Engineer at{" "}
             <a
-              href="https://www.energyintell.com/Home/"
+              href="https://www.getjitto.com/"
+              className="text-green-400 underline"
               target="_blank"
-              rel="noreferrer"
-              className="text-indigo-400"
+              rel="norefferer"
             >
-            Energy Intell
+              Jitto
             </a>
-            &nbsp;developing a reverse ETL pipeline and their mobile dashboard
-            app with <span className="text-green-400">.NET Core</span>.&nbsp; Aside from
-            work, he enjoys participating in in-person hackathons and working on his
-            super secret side project <a href = "https://github.com/aanxniee/athena"
-            className="text-indigo-400" target="_blank" rel = "noreferrer">Athena. </a>
-            When not online, he is often found at the gym.
+            ,&nbsp;where he is currently migrating their database from DynamoDB
+            to Aurora ServerlessV2. He is most familiar with react.js, node.js,
+            and python but is secretly wants to be a golang developer. From his
+            current job, he&apos;s learned that he loves working at startups and
+            is currently
+            <div
+              className="lg:tooltip"
+              data-tip="contact me at: r29zhang@uwaterloo.ca "
+            >
+              <a className="text-green-400 underline">
+                &nbsp;looking for co-op opportunities for Summer 2024
+              </a>
+              .&nbsp;Aside from work, Richard is addicted to Muay Thai and is
+              learning how to cook. He is also working towards his first AWS
+              developer certification.
+            </div>
           </p>
           <div className="flex justify-center items-center mb-2">
-            {/* <Link className="btn kbd " href="/portfolio">
-              <span className="font-mada">View Portfolio</span>
-            </Link> */}
             <Link
               href="/portfolio"
               className=" rounded-lg relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-primary transition-all duration-150 ease-in-out  hover:pl-10 hover:pr-6 bg-neutr group  border border-gray-900"
