@@ -4,51 +4,10 @@ import {
   AiOutlineMail,
 } from "react-icons/ai";
 import { useState, useEffect } from "react";
-// import { loadFromBlob } from "@excalidraw/excalidraw";
-import Elements from "./Elements";
-import MobileElements from "./MobileElements";
+
 import Link from "next/link";
 import { toast } from "react-hot-toast";
 export default function Hero() {
-  const [Comp, setComp] = useState();
-  function createInitialData() {
-    // var response;
-    // if (window.innerWidth > 640) {
-    //   response = await fetch("/websiteSkills.excalidraw");
-    // } else {
-    //   response = await fetch("/websiteSkillsMobile.excalidraw");
-
-    // }
-    // const data = await response.blob();
-    // const scene = await loadFromBlob(data, null, null);
-    // console.log(scene.elements);
-    let initialData: any = {};
-    if (window.innerWidth > 640) {
-      initialData.scrollToContent = true;
-      initialData.appState = {
-        viewBackgroundColor: "#E6E8EF",
-        zoom: 0.95,
-      };
-      initialData.elements = Elements;
-    } else {
-      initialData.appState = {
-        viewBackgroundColor: "#E6E8EF",
-        scrollX: -2430,
-        scrollY: -100,
-      };
-      initialData.elements = MobileElements;
-    }
-    // initialData.elements = scene.elements;
-    return initialData;
-  }
-
-  useEffect(() => {
-    import("@excalidraw/excalidraw").then((comp) => {
-      //@ts-ignore
-      setComp(comp.Excalidraw);
-    });
-  }, []);
-
   function copyEmail() {
     const text = "r29zhang@uwaterloo.ca";
     navigator.clipboard
@@ -199,16 +158,7 @@ export default function Hero() {
           </h3>
         </div>
       </div>
-      <div className="md:w-[70rem] md:h-[30rem] flex items-center justify-center mb-10 w-[20rem] h-[40rem] ">
-        {Comp && (
-          //@ts-ignore
-          <Comp
-            theme="dark"
-            viewModeEnabled
-            initialData={createInitialData()}
-          />
-        )}
-      </div>
+      <div className="md:w-[70rem] md:h-[30rem] flex items-center justify-center mb-10 w-[20rem] h-[40rem] "></div>
     </div>
   );
 }
