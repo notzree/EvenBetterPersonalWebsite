@@ -18,8 +18,8 @@ export default function Home() {
       </Head>
       <main className="bg-neutral w-screen h-screen overflow-x-hidden">
         <NavBar />
-        <Hero />
-        <Footer />
+        {/* <Hero />
+        <Footer /> */}
       </main>
     </>
   );
