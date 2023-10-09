@@ -93,7 +93,7 @@ export default function Hero() {
             </a>
             ,&nbsp;where he is currently migrating their database from DynamoDB
             to Aurora ServerlessV2. He is most familiar with react.js, node.js,
-            and python but is secretly wants to be a golang developer. From his
+            and python but is working on learning Rust and Golang. From his
             current job, he&apos;s learned that he loves working at startups and
             is currently
             <a className="text-green-400 underline">
