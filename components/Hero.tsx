@@ -78,7 +78,7 @@ export default function Hero() {
           <h3 className="font-mada font-bold text-2xl  text-primary underline decoration-gray-900 underline-offset-8 decoration-4 mb-6">
             &nbsp;Work &nbsp;
           </h3>
-          <p className="text-primary md:w-[36rem] text-md md:text-lg mb-8  text-justify   ">
+          <p className="text-primary md:w-[36rem] text-md md:text-lg mb-8  text-left">
             Richard is a software engineer based in Toronto studying Systems
             Design Engineering at the{" "}
             <span className="text-green-400">University of Waterloo. </span>
@@ -96,17 +96,12 @@ export default function Hero() {
             and python but is secretly wants to be a golang developer. From his
             current job, he&apos;s learned that he loves working at startups and
             is currently
-            <div
-              className="lg:tooltip"
-              data-tip="contact me at: r29zhang@uwaterloo.ca "
-            >
-              <a className="text-green-400 underline">
-                &nbsp;looking for co-op opportunities for Summer 2024
-              </a>
-              .&nbsp;Aside from work, Richard is addicted to Muay Thai and is
-              learning how to cook. He is also working towards his first AWS
-              developer certification.
-            </div>
+            <a className="text-green-400 underline">
+              &nbsp;looking for co-op opportunities for Summer 2024
+            </a>
+            .&nbsp;Aside from work, Richard is addicted to Muay Thai and is
+            learning how to cook. He is also working towards his AWS certified
+            developer certification.
           </p>
           <div className="flex justify-center items-center mb-2">
             <Link
@@ -151,11 +146,6 @@ export default function Hero() {
               </span>
             </Link>
           </div>
-        </div>
-        <div className="w-full">
-          <h3 className="font-mada font-bold text-2xl pb-2 text-primary underline decoration-gray-900 underline-offset-8 decoration-4 mb-6 ">
-            &nbsp;Skills &nbsp;
-          </h3>
         </div>
       </div>
       <div className="md:w-[70rem] md:h-[30rem] flex items-center justify-center mb-10 w-[20rem] h-[40rem] "></div>
