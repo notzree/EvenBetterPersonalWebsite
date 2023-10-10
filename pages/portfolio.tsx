@@ -1,4 +1,4 @@
-import NavBar from "@/components/NavBar";
+import { NavBar } from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import { client } from "@/clientLib/sanityClient";
 import PortfolioHero from "@/components/PortfolioHero";
@@ -7,7 +7,7 @@ let redis = Redis.fromEnv();
 
 export default function Home({ projects }: any) {
   return (
-    <main className="bg-neutral w-screen h-screen overflow-x-hidden">
+    <main className="bg-background w-screen h-screen overflow-x-hidden">
       <NavBar />
       <PortfolioHero projects={projects} />
       <Footer />
