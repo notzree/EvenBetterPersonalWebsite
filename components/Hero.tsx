@@ -1,9 +1,3 @@
-import {
-  AiOutlineLinkedin,
-  AiOutlineGithub,
-  AiOutlineMail,
-} from "react-icons/ai";
-import { useState, useEffect } from "react";
 import Link from "next/link";
 import { toast } from "react-hot-toast";
 import { Separator } from "./ui/separator";
@@ -15,7 +9,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+
 export default function Hero({ projects }: any) {
+  console.log(projects);
   function copyEmail() {
     const text = "r29zhang@uwaterloo.ca";
     navigator.clipboard
@@ -130,10 +126,7 @@ export default function Hero({ projects }: any) {
             </AccordionItem>
             <AccordionItem value="portfolio">
               <AccordionTrigger>portfolio</AccordionTrigger>
-              <AccordionContent>
-                Yes. It comes with default styles that matches the other
-                components&apos; aesthetic.
-              </AccordionContent>
+              <AccordionContent></AccordionContent>
             </AccordionItem>
             <AccordionItem value="resume">
               <AccordionTrigger>resume</AccordionTrigger>
