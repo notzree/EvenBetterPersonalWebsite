@@ -15,7 +15,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-export default function Hero() {
+export default function Hero({ projects }: any) {
   function copyEmail() {
     const text = "r29zhang@uwaterloo.ca";
     navigator.clipboard
@@ -115,11 +115,11 @@ export default function Hero() {
                 >
                   Jitto
                 </a>
-                ,&nbsp;where he is currently migrating their database from
-                DynamoDB to Aurora ServerlessV2. He is most familiar with
-                react.js, node.js, and python but is secretly wants to be a
-                golang developer. From his current job, he&apos;s learned that
-                he loves working at startups and is currently
+                ,&nbsp;where he is mainly building infrastructure and their
+                serverless backend on AWS. He uses things like node.js,
+                flask/django, alot of AWS and is learning Rust 🦀. From his
+                current job, he&apos;s learned that he loves working at startups
+                and is currently
                 <a className="text-muted-foreground underline">
                   &nbsp;looking for co-op opportunities for Summer 2024
                 </a>

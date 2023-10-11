@@ -1,13 +1,15 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
-// import Hero from '@/components/Hero'
-import { NavBar } from "@/components/NavBar";
+import Hero from "@/components/Hero";
+import { client } from "@/clientLib/sanityClient";
+import { Redis } from "@upstash/redis";
+let redis = Redis.fromEnv();
 import dynamic from "next/dynamic";
 import Footer from "@/components/Footer";
-const Hero = dynamic(() => import("@/components/Hero"), { ssr: false });
+// const Hero = dynamic(() => import("@/components/Hero"), { ssr: false });
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default function Home({ projects }: any) {
   return (
     <>
       <Head>
@@ -17,9 +19,29 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="bg-background w-screen h-screen overflow-x-hidden">
-        <Hero />
+        <Hero projects={projects} />
         <Footer />
       </main>
     </>
   );
+}
+
+export async function getServerSideProps() {
+  const cache: string = (await redis.get("projects")) || "";
+  if (cache != "") {
+    return {
+      props: {
+        projects: JSON.parse(JSON.stringify(cache)),
+      },
+    };
+  } else {
+    const query = '*[_type =="Project"]| order(order asc)';
+    const projects = await client.fetch(query);
+    await redis.set("projects", JSON.stringify(projects), { ex: 10000 });
+    return {
+      props: {
+        projects: projects,
+      },
+    };
+  }
 }
