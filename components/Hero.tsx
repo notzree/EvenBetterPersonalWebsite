@@ -10,7 +10,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import ProjectCard from "./ProjectCard";
-import { urlFor } from "@/clientLib/sanityClient";
 export default function Hero({ projects }: any) {
   console.log(projects);
   function copyEmail() {
@@ -40,27 +39,35 @@ export default function Hero({ projects }: any) {
   }
 
   return (
-    <div className=" bg-background min-h-screen w-screen flex flex-col items-center px-10 md:px-0 mt-12">
-      <div className="flex flex-col justify-between items-start w-auto md:w-[35rem]">
-        <div className="flex justify-between items-center mb-6 w-full">
+    <div className=" bg-background min-h-screen w-screen md:w-screen flex flex-col items-center mt-12">
+      <div className="flex flex-col justify-between items-start w-full md:w-[35rem] px-4 md:px-0">
+        <div className="flex justify-between items-start mb-6 w-full">
           <div className="space-y-1">
-            <div className="my-2 flex h-5 items-center space-x-2 ">
-              <h1 className="text-2xl md:text-3xl leading-none text-primary">
+            <div className="my-2 flex h-5 items-center space-x-2 px-2">
+              <h1 className="text-xl md:text-3xl leading-none text-primary">
                 richard zhang
               </h1>
-              <h2 className="text-md text-muted-foreground ">
+              <h2 className="text-sm text-muted-foreground ">
                 software engineer
               </h2>
             </div>
-            <div className=" my-2 flex h-5 items-center space-x-2 ">
+            <div className=" my-2 flex h-5 items-center space-x-2 px-2">
               <div className="">
-                <Button variant="link" className="px-0" onClick={copyEmail}>
+                <Button
+                  variant="link"
+                  className="px-0 text-xs md:text-sm"
+                  onClick={copyEmail}
+                >
                   @r29zhang@uwaterloo.ca
                 </Button>
               </div>
               <Separator orientation="vertical" />
               <div className="">
-                <Button asChild variant="link" className="px-0">
+                <Button
+                  asChild
+                  variant="link"
+                  className="px-0 text-xs md:text-sm"
+                >
                   <Link
                     href="https://www.linkedin.com/in/rz2004/"
                     rel="noreferrer"
@@ -72,7 +79,11 @@ export default function Hero({ projects }: any) {
               </div>
               <Separator orientation="vertical" />
               <div className="">
-                <Button asChild variant="link" className="px-0">
+                <Button
+                  asChild
+                  variant="link"
+                  className="px-0 text-xs md:text-sm"
+                >
                   <Link
                     href="https://github.com/notzree"
                     rel="noreferrer"
@@ -84,15 +95,15 @@ export default function Hero({ projects }: any) {
               </div>
             </div>
           </div>
-          <div className="pl-4">
+          <div className="md:pl-4">
             <ModeToggle />
           </div>
         </div>
-        <div className="w-full ">
+        <div className="w-full px-2">
           <Accordion
             type="single"
             collapsible
-            className="w-full"
+            className=" md:px-0"
             defaultValue="about"
           >
             <AccordionItem value="about">
@@ -145,7 +156,6 @@ export default function Hero({ projects }: any) {
           </Accordion>
         </div>
       </div>
-      <div className="md:w-[70rem] md:h-[30rem] flex items-center justify-center mb-10 w-[20rem] h-[40rem] "></div>
     </div>
   );
 }

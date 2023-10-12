@@ -54,11 +54,10 @@ export default function ProjectCard({ project }: any) {
         /> */}
       </CardContent>
       <CardFooter>
-        <div className="flex h-5 items-center space-x-4 text-sm">
+        <div className="flex flex-wrap h-auto items-center text-sm">
           {iterableSkills.map((skill: string) => (
-            <div key={skill}>
+            <div key={skill} className="px-2 px-1">
               {skill}
-              <Separator orientation="vertical" />
             </div>
           ))}
         </div>

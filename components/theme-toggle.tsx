@@ -21,7 +21,12 @@ export function ModeToggle() {
     }
   };
   return (
-    <Button variant="outline" size="icon" onClick={toggleTheme}>
+    <Button
+      variant="outline"
+      size="icon"
+      onClick={toggleTheme}
+      className="my-0 py-0"
+    >
       {theme === "light" ? (
         <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
       ) : (
