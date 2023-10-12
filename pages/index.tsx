@@ -9,7 +9,8 @@ import Footer from "@/components/Footer";
 // const Hero = dynamic(() => import("@/components/Hero"), { ssr: false });
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home({ projects }: any) {
+export default function Home({ projects, cache }: any) {
+  console.log(cache);
   return (
     <>
       <Head>
@@ -32,15 +33,23 @@ export async function getServerSideProps() {
     return {
       props: {
         projects: JSON.parse(JSON.stringify(cache)),
+        cache: "hit",
       },
     };
   } else {
-    const query = '*[_type =="Project"]| order(order asc)';
+    const query = `*[_type =="Project"]{
+      name,
+      description,
+      skills,
+      order,
+        link,
+    }| order(order asc)[0..5]`;
     const projects = await client.fetch(query);
     await redis.set("projects", JSON.stringify(projects), { ex: 10000 });
     return {
       props: {
         projects: projects,
+        cache: "miss",
       },
     };
   }

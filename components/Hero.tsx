@@ -9,7 +9,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-
+import ProjectCard from "./ProjectCard";
+import { urlFor } from "@/clientLib/sanityClient";
 export default function Hero({ projects }: any) {
   console.log(projects);
   function copyEmail() {
@@ -39,7 +40,7 @@ export default function Hero({ projects }: any) {
   }
 
   return (
-    <div className=" bg-backgroundmin-h-screen w-screen flex flex-col items-center px-10 md:px-0 mt-12">
+    <div className=" bg-background min-h-screen w-screen flex flex-col items-center px-10 md:px-0 mt-12">
       <div className="flex flex-col justify-between items-start w-auto md:w-[35rem]">
         <div className="flex justify-between items-center mb-6 w-full">
           <div className="space-y-1">
@@ -126,14 +127,20 @@ export default function Hero({ projects }: any) {
             </AccordionItem>
             <AccordionItem value="portfolio">
               <AccordionTrigger>portfolio</AccordionTrigger>
-              <AccordionContent></AccordionContent>
+              <AccordionContent>
+                {
+                  <div className="grid grid-cols-1 gap-4 ">
+                    {projects.map((project: any) => (
+                      <ProjectCard project={project} key={project._id} />
+                    ))}
+                  </div>
+                }
+              </AccordionContent>
             </AccordionItem>
             <AccordionItem value="resume">
-              <AccordionTrigger>resume</AccordionTrigger>
-              <AccordionContent>
-                Yes. It&apos;s animated by default, but you can disable it if
-                you prefer.
-              </AccordionContent>
+              <Link href="/Resume.pdf" rel="noreferrer" target="_blank">
+                <AccordionTrigger noExpand={true}>resume</AccordionTrigger>
+              </Link>
             </AccordionItem>
           </Accordion>
         </div>
