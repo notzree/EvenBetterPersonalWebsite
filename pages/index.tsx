@@ -10,7 +10,6 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home({ projects, cache }: any) {
-  console.log(cache);
   return (
     <>
       <Head>

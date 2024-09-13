@@ -11,7 +11,6 @@ import {
 } from "@/components/ui/accordion";
 import ProjectCard from "./ProjectCard";
 export default function Hero({ projects }: any) {
-  console.log(projects);
   function copyEmail() {
     const text = "r29zhang@uwaterloo.ca";
     navigator.clipboard
@@ -48,7 +47,7 @@ export default function Hero({ projects }: any) {
                 richard zhang
               </h1>
               <h2 className="text-sm text-muted-foreground ">
-                software engineer
+                aspiring software engineer
               </h2>
             </div>
             <div className=" my-2 flex h-5 items-center space-x-2 px-2">
@@ -58,7 +57,7 @@ export default function Hero({ projects }: any) {
                   className="px-0 text-xs md:text-sm"
                   onClick={copyEmail}
                 >
-                  @r29zhang@uwaterloo.ca
+                  r29zhang[at]uwaterloo[dot]ca
                 </Button>
               </div>
               <Separator orientation="vertical" />
@@ -114,30 +113,26 @@ export default function Hero({ projects }: any) {
                 <span className="text-muted-foreground">
                   University of Waterloo.{" "}
                 </span>
-                He is working as a Fullstack Engineer at{" "}
+                He is interested in the areas of backend engineering & distributed systems.
+                He has most recently interned at{" "}
                 <a
-                  href="https://www.getjitto.com/"
+                  href="https://blendable.ca/"
                   className=" text-muted-foreground underline"
                   target="_blank"
                   rel="norefferer"
                 >
-                  Jitto
+                  Blendable
                 </a>
-                ,&nbsp;where he is mainly building infrastructure and their
-                serverless backend on AWS. He uses things like node.js,
-                flask/django, alot of AWS and is learning Rust 🦀. From his
-                current job, he&apos;s learned that he loves working at startups
-                and is currently
+                ,&nbsp;where has working on backend reporting services with Python and Django.
+                He is currently&nbsp;
                 <a className="text-muted-foreground underline">
-                  &nbsp;looking for co-op opportunities for Summer 2024
+                  looking for co-op opportunities for Winter 2025
                 </a>
-                .&nbsp;Aside from work, Richard is addicted to Muay Thai and is
-                learning how to cook. He is also working towards his AWS
-                certified developer certification.
+                .&nbsp;Aside from work, Richard enjoys fishing, camping, and playing pickleball.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="portfolio">
-              <AccordionTrigger>portfolio</AccordionTrigger>
+              <AccordionTrigger>notable projects</AccordionTrigger>
               <AccordionContent>
                 {
                   <div className="grid grid-cols-1 gap-4 ">
