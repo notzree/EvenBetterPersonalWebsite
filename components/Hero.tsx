@@ -123,7 +123,7 @@ export default function Hero({ projects }: any) {
                 >
                   Blendable
                 </a>
-                ,&nbsp;where has working on backend reporting services with Python and Django.
+                ,&nbsp;where he worked on backend reporting services with Python and Django.
                 He is currently&nbsp;
                 <a className="text-muted-foreground underline">
                   looking for co-op opportunities for Winter 2025
