@@ -9,14 +9,17 @@ import {
 import { Button } from "@/components/ui/button";
 import { Separator } from "@radix-ui/react-separator";
 type project = {
-  title: string;
+  name: string;
   description: string;
+  skills: string;
   link: string;
   image: string;
   tags: string[];
 };
-
-export default function ProjectCard({ project }: any) {
+type ProjectCardArgs = {
+  project: project;
+};
+export default function ProjectCard({ project }: ProjectCardArgs) {
   const iterableSkills = project.skills
     .split(",")
     .map((item: string) => item.trim());
@@ -35,7 +38,7 @@ export default function ProjectCard({ project }: any) {
                   target="_blank"
                   rel="norefferer"
                 >
-                  github link
+                  link
                 </a>
               </Button>
             )}

@@ -113,8 +113,8 @@ export default function Hero({ projects }: any) {
                 <span className="text-muted-foreground">
                   University of Waterloo.{" "}
                 </span>
-                He is interested in the areas of backend engineering & distributed systems.
-                He has most recently interned at{" "}
+                He is interested in backend engineering & distributed systems.
+                He has previously interned at{" "}
                 <a
                   href="https://blendable.ca/"
                   className=" text-muted-foreground underline"
@@ -123,12 +123,13 @@ export default function Hero({ projects }: any) {
                 >
                   Blendable
                 </a>
-                ,&nbsp;where he worked on backend reporting services with Python and Django.
-                He is currently&nbsp;
+                ,&nbsp;where he worked on financial reporting services with
+                Python and Django. He is currently&nbsp;
                 <a className="text-muted-foreground underline">
-                  looking for co-op opportunities for Winter 2025
+                  looking for co-op opportunities for Fall 2025
                 </a>
-                .&nbsp;Aside from work, Richard enjoys fishing, camping, and playing pickleball.
+                .&nbsp;Aside from work, Richard enjoys backpacking, fishing, and
+                going to the gym.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="portfolio">
